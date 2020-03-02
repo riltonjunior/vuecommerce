@@ -46,7 +46,8 @@ export default {
   }
   & .container {
     margin: auto;
-    align-self: center;
+    & .busca {
+    }
   }
 }
 .busca {
