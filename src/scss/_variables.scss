@@ -1,8 +1,15 @@
 /* scss/_variables.scss */
-$bg-classroom: #232323;
 // Variables
-$primary: "#5b3cc4";
-$success: "rgb(23, 201, 100)";
-$danger: "rgb(242, 19, 93)";
-$warning: "rgb(255, 130, 0)";
-$dark: "rgb(36, 33, 69)";
+$primary: #5b3cc4;
+$success: rgb(23, 201, 100);
+$danger: rgb(242, 19, 93);
+$warning: rgb(255, 130, 0);
+$dark: rgb(36, 33, 69);
+$light: #f4f7f8;
+
+// Backgrounds
+$bg-classroom: #232323;
+
+// Padding Helpers
+$tp-max: 120px 0px; // Padding TopBottom
+$tp-min: 60px 0px; // Padding TopBottom

@@ -1,10 +1,10 @@
 <template>
-  <section>
+  <footer>
     <p class="footer">
       All rights reserved -
       <a href="https://rilton.art.br/">rilton.art.br</a>
     </p>
-  </section>
+  </footer>
 </template>
 <script>
 export default {
@@ -15,6 +15,5 @@ export default {
 p.footer {
   text-align: center !important ;
   padding: 20px 0px;
-  background-color: $primary;
 }
 </style>

@@ -1,25 +1,18 @@
 <template>
   <header>
     <nav>
-      <router-link
-        to="/"
-        class="logo nav-link"
-      >
-        Vue<strong>Commerce</strong>
+      <router-link to="/" class="logo nav-link">
+        Vue
+        <strong>Commerce</strong>
       </router-link>
-      <vs-button
-        to="/login"
-        flat
-      >
-        Vender / Login
-      </vs-button>
+      <vs-button to="/login" flat>Vender / Login</vs-button>
     </nav>
   </header>
 </template>
 <script>
 export default {
-  name: "Header",
-}
+  name: "Header"
+};
 </script>
 <style lang="scss">
 .logo {
