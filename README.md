@@ -29,14 +29,14 @@
 - [ ] Login
   - [ ] Vuex login
 - [ ] User form
-  - [ ] Vuex from
+  - [ ] Vuex form
 - [ ] Cep API
 - [ ] Users
   - [ ] POST
   - [ ] Route
   - [ ] Stylesheet
   - [ ] Products
-  - [ ] Update
+  - [ ] Profile Update
 - [ ] Products
   - [ ] Add
   - [ ] Delete

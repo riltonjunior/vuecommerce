@@ -32,11 +32,6 @@
           </div>
         </vs-card>
       </vs-col>
-      <vs-row vs-justify="center" vs-align="center" vs-w="12">
-        <vs-col type="flex" vs-justify="center" vs-align="center" vs-w="12">
-          <Pagination :pTotal="productsTotal" :pPerPage="productsPerPage" />
-        </vs-col>
-      </vs-row>
     </vs-row>
     <vs-row
       vs-justify="center"
@@ -49,6 +44,11 @@
         <vs-alert active="true">
           <p>Desculpe-nos. Busca sem resultado, tente buscar outro termo.</p>
         </vs-alert>
+      </vs-col>
+    </vs-row>
+    <vs-row vs-justify="center" vs-align="center" vs-w="12">
+      <vs-col type="flex" vs-justify="center" vs-align="center" vs-w="12">
+        <Pagination :pTotal="productsTotal" :pPerPage="productsPerPage" />
       </vs-col>
     </vs-row>
   </section>

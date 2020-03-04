@@ -1,16 +1,16 @@
 <template>
-  <div v-if="pTotal < 1">
-    <router-link :to="{query: {_page: query(Number(currentPage))}}">
-      <vs-pagination :total="pagTotal" v-model="currentPage"></vs-pagination>
-    </router-link>
-  </div>
+  <!-- <router-link :to="{query: {_page: this.currentPage}}"> -->
+  <router-link v-if="pagTotal > 1" :to="{query: queryRoute(currentPage)}">
+    <vs-pagination :total="pagTotal" v-model="currentPage" class></vs-pagination>
+  </router-link>
 </template>
 <script>
 export default {
   name: "Pagination",
   data() {
     return {
-      currentPage: 1
+      currentPage: 1,
+      currentx: 5
     };
   },
   props: {
@@ -18,11 +18,12 @@ export default {
     pTotal: { type: Number, default: 1 }
   },
   methods: {
-    query(pag) {
-      pag = Number(pag);
+    queryRoute(pagina) {
+      //   console.log(this.pagTotal);
       return {
-        ...this.$route.query,
-        _page: pag
+        // ...this.$route.query,
+        q: this.$route.query.q,
+        _page: pagina
       };
     }
   },
@@ -31,6 +32,11 @@ export default {
       const total = this.pTotal / this.pPerPage;
       return total !== Infinity ? Math.ceil(total) : 0;
     }
+  },
+  beforeCreate() {
+    console.log(this.pagTotal);
+    // "Uma mensagem."
+    // this.puxarApi();
   }
 };
 </script>
