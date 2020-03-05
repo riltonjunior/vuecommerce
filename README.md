@@ -19,7 +19,7 @@
 - [x] Create helpers
 - [x] Create services
 - [x] Add Search
-  - [ ] Change component search props to mutation store
+  - [x] Change component search props to mutation store
 - [x] Add Style
   - [x] Products
   - [x] Inputs
@@ -38,6 +38,8 @@
   - [ ] Products
   - [ ] Profile Update
 - [ ] Products
+  - [x] Route
+  - [x] Single Page
   - [ ] Add
   - [ ] Delete
 - [ ] Transactions
