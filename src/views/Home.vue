@@ -28,12 +28,6 @@ export default {
 };
 </script>
 <style lang="scss">
-#home {
-  // display: flex;
-  // flex-direction: column;
-  // align-content: center;
-  // align-itens: center;
-}
 .hero {
   display: flex;
   flex-direction: column;
@@ -46,8 +40,6 @@ export default {
   }
   & .container {
     margin: auto;
-    & .busca {
-    }
   }
 }
 .busca {

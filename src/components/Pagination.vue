@@ -1,8 +1,10 @@
-<template>
-  <!-- <router-link :to="{query: {_page: this.currentPage}}"> -->
-  <router-link v-if="pagTotal > 1" :to="{query: queryRoute(currentPage)}">
-    <vs-pagination :total="pagTotal" v-model="currentPage" class></vs-pagination>
-  </router-link>
+<template >
+  <div v-if="pagTotal > 1">
+    <!-- <router-link :to="{query: {_page: this.currentPage}}"> -->
+    <router-link :to="{query: queryRoute(currentPage)}">
+      <vs-pagination :total="pagTotal" v-model="currentPage" class></vs-pagination>
+    </router-link>
+  </div>
 </template>
 <script>
 export default {
@@ -19,12 +21,12 @@ export default {
   },
   methods: {
     queryRoute(pagina) {
-      //   console.log(this.pagTotal);
-      return {
-        // ...this.$route.query,
-        q: this.$route.query.q,
-        _page: pagina
-      };
+      const query = this.$route.query.q;
+      if (query != undefined) {
+        return { q: query, _page: pagina };
+      } else {
+        return { _page: pagina };
+      }
     }
   },
   computed: {

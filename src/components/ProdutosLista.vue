@@ -7,31 +7,38 @@
         vs-align="center"
         vs-w="3"
         v-for="produto in produtos"
-        :key="produto.uid"
+        :key="produto.id"
         class="cardx"
       >
-        <vs-card>
-          <div slot="header">
-            <h3>{{produto.name}}</h3>
-          </div>
-          <div slot="media">
-            <img v-if="produto.foto" :src="produto.foto[0].src" :alt="produto.foto[0].title" />
-          </div>
-          <div>
-            <span>
-              <h2>
-                <strong>{{formatPrice(produto.price)}}</strong>
-              </h2>
-            </span>
-            <span>{{produto.description}}</span>
-          </div>
-          <div slot="footer">
-            <vs-row vs-justify="flex-end">
-              <vs-button color="primary" type="filled">Comprar</vs-button>
-            </vs-row>
-          </div>
-        </vs-card>
+        <router-link :to="{name: 'Product', params: {id: produto.id}}">
+          <vs-card>
+            <div slot="header">
+              <h3>{{produto.name}}</h3>
+            </div>
+            <div slot="media">
+              <img v-if="produto.foto" :src="produto.foto[0].src" :alt="produto.foto[0].title" />
+            </div>
+            <div>
+              <span>
+                <h2>
+                  <strong>{{formatPrice(produto.price)}}</strong>
+                </h2>
+              </span>
+              <span>{{produto.description}}</span>
+            </div>
+            <div slot="footer">
+              <vs-row vs-justify="flex-end">
+                <vs-button color="primary" type="filled">Comprar</vs-button>
+              </vs-row>
+            </div>
+          </vs-card>
+        </router-link>
       </vs-col>
+      <vs-row vs-justify="center" vs-align="center" vs-w="12">
+        <vs-col type="flex" vs-justify="center" vs-align="center" vs-w="12">
+          <Pagination :pTotal="productsTotal" :pPerPage="productsPerPage" />
+        </vs-col>
+      </vs-row>
     </vs-row>
     <vs-row
       vs-justify="center"
@@ -44,11 +51,6 @@
         <vs-alert active="true">
           <p>Desculpe-nos. Busca sem resultado, tente buscar outro termo.</p>
         </vs-alert>
-      </vs-col>
-    </vs-row>
-    <vs-row vs-justify="center" vs-align="center" vs-w="12">
-      <vs-col type="flex" vs-justify="center" vs-align="center" vs-w="12">
-        <Pagination :pTotal="productsTotal" :pPerPage="productsPerPage" />
       </vs-col>
     </vs-row>
   </section>
