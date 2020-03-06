@@ -93,6 +93,15 @@ export default {
     formatPrice(value) {
       let val = (value / 1).toFixed(2).replace(".", ",");
       return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    },
+    openLoadingBackground() {
+      this.$vs.loading({
+        background: this.backgroundLoading,
+        color: "rgb(255, 255, 255)"
+      });
+      setTimeout(() => {
+        this.$vs.loading.close();
+      }, 3000);
     }
   },
   watch: {

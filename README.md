@@ -25,6 +25,7 @@
   - [x] Inputs
 - [x] Add pagination
 - [ ] Add transition
+  - [ ] Add loading
 - [ ] Filter products
 - [ ] Login
   - [ ] Vuex login
@@ -98,3 +99,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 See [Vuesax Reference](https://lusaxweb.github.io/vuesax/).
 See [Origamid Reference](https://www.origamid.com/slide/vue-js-completo/).
 See [FeathersJS](https://docs.feathersjs.com/guides/).
+See [AwesomeJS](https://awesomejs.dev/).

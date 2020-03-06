@@ -16,6 +16,16 @@ export default {
     Header,
     Footer
   }
+  // created() {
+  //   this.$vs.loading({
+  //     type: "border"
+  //   });
+  // },
+  // mounted() {
+  //   setTimeout(() => {
+  //     this.$vs.loading.close();
+  //   }, 10);
+  // }
 };
 </script>
 <style lang="scss">
