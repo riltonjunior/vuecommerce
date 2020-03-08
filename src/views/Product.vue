@@ -14,7 +14,7 @@
               <vs-col class="prod-content">
                 <h2 class="subtitle">{{product.price | numberPrice}}</h2>
                 <p>{{product.description}}</p>
-                <vs-input-number v-model="qtd" />
+                <vs-input-number v-if="!product.sold" v-model="qtd" min="1" />
                 <vs-button size="large" v-if="!product.sold">Comprar</vs-button>
                 <vs-button size="large" v-if="product.sold" disabled>Comprar</vs-button>
               </vs-col>
@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       product: "",
-      qtd: ""
+      qtd: 1
     };
   },
   watch: {

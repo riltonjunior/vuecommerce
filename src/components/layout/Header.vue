@@ -5,13 +5,19 @@
         Vue
         <strong>Commerce</strong>
       </router-link>
-      <vs-button to="/login" flat>Vender / Login</vs-button>
+      <vs-button v-if="$store.state.login" to="/profile" flat>{{getName}}</vs-button>
+      <vs-button v-else to="/login" flat>Vender / Login</vs-button>
     </nav>
   </header>
 </template>
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  computed: {
+    getName() {
+      return this.$store.state.user.displayName.replace(/ .*/, "");
+    }
+  }
 };
 </script>
 <style lang="scss">

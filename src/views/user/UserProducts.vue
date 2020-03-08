@@ -1,10 +1,10 @@
 <template>
-  <div>Create Login</div>
+  <section>User Products</section>
 </template>
 
 <script>
 export default {
-  name: "CreateLogin"
+  name: "UserProducts"
 };
 </script>
 

@@ -50,6 +50,17 @@ a {
 a:hover {
   color: #2c3e50;
 }
+a span,
+a h3 {
+  color: #2c3e50;
+}
+a:hover span,
+a:hover h3 {
+  color: $primary;
+}
+a:hover button span {
+  color: #fff;
+}
 // Page Elements
 #app {
   display: flex;

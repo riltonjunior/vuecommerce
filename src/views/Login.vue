@@ -1,6 +1,5 @@
 <template>
   <section>
-    <!-- <div class="container"> -->
     <vs-row vs-align="center" vs-type="flex" vs-justify="center">
       <vs-col vs-w="3">
         <h1>Login</h1>
@@ -25,19 +24,18 @@
         <p class="lostPassword">
           <a href>Lost your password? Click here.</a>
         </p>
-        <CreateLogin />
+        <CreateAccount />
       </vs-col>
     </vs-row>
-    <!-- </div> -->
   </section>
 </template>
 
 <script>
-import CreateLogin from "@/components/CreateLogin.vue";
+import CreateAccount from "@/components/CreateAccount.vue";
 export default {
   name: "Login",
   components: {
-    CreateLogin
+    CreateAccount
   },
   data() {
     return {
@@ -49,7 +47,8 @@ export default {
   },
   methods: {
     logIn() {
-      console.log("Clicou.");
+      this.$store.dispatch("getUser", this.login.email);
+      this.$router.push({ name: "Profile" });
     }
   }
 };
