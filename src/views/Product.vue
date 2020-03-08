@@ -12,10 +12,11 @@
           <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-w="6">
             <vs-row>
               <vs-col class="prod-content">
-                <h2 class="subtitle">{{formatPrice(product.price)}}</h2>
+                <h2 class="subtitle">{{product.price | numberPrice}}</h2>
                 <p>{{product.description}}</p>
                 <vs-input-number v-model="qtd" />
-                <vs-button size="large">Comprar</vs-button>
+                <vs-button size="large" v-if="!product.sold">Comprar</vs-button>
+                <vs-button size="large" v-if="product.sold" disabled>Comprar</vs-button>
               </vs-col>
             </vs-row>
           </vs-col>
@@ -47,18 +48,18 @@ export default {
         // this.productsTotal = Number(response.headers["x-total-count"]);
         this.product = response.data;
       });
-    },
-    formatPrice(value) {
-      const formatter = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "BRL",
-        minimumFractionDigits: 2
-      });
-      return formatter
-        .format(value)
-        .replace(".", ",")
-        .replace(",", ".");
     }
+    // formatPrice(value) {
+    //   const formatter = new Intl.NumberFormat("en-US", {
+    //     style: "currency",
+    //     currency: "BRL",
+    //     minimumFractionDigits: 2
+    //   });
+    //   return formatter
+    //     .format(value)
+    //     .replace(".", ",")
+    //     .replace(",", ".");
+    // }
   },
   created() {
     this.getProduct();

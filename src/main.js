@@ -20,6 +20,20 @@ Vue.use(Vuesax, {
     }
   }
 });
+Vue.filter("numberPrice", price => {
+  // console.log(price);
+  price = Number(price);
+  // console.log("Depois de number" + price);
+  if (!isNaN(price)) {
+    return price.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+      minimumFractionDigits: 2
+    });
+  } else {
+    // console.log(price);
+  }
+});
 
 new Vue({
   router,

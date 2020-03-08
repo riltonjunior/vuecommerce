@@ -21,7 +21,7 @@
             <div>
               <span>
                 <h2>
-                  <strong>{{formatPrice(produto.price)}}</strong>
+                  <strong>{{produto.price | numberPrice}}</strong>
                 </h2>
               </span>
               <span>{{produto.description}}</span>
@@ -90,10 +90,10 @@ export default {
         this.produtos = response.data;
       });
     },
-    formatPrice(value) {
-      let val = (value / 1).toFixed(2).replace(".", ",");
-      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    },
+    // formatPrice(value) {
+    //   let val = (value / 1).toFixed(2).replace(".", ",");
+    //   return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    // },
     openLoadingBackground() {
       this.$vs.loading({
         background: this.backgroundLoading,

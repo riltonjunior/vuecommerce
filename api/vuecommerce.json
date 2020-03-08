@@ -27,7 +27,7 @@
             "name": "Cooktop",
             "user_id": "01",
             "price": 2920,
-            "sold": false,
+            "sold": true,
             "description": "This is a cooktop. The best cooktop of market.",
             "pics": null
         },
