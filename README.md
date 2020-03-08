@@ -26,7 +26,7 @@
 - [x] Add pagination
 - [ ] Add transition
   - [ ] Add loading
-- [ ] Filter products
+- [x] Filter products
 - [ ] Login
   - [ ] Vuex login
 - [ ] User form
