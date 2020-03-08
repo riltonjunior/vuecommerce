@@ -3,7 +3,7 @@
     <!-- <vs-row vs-align="center" vs-type="flex" vs-justify="center"> -->
     <!-- <vs-col vs-w="6"> -->
     <h2>Create Account</h2>
-    <vs-button v-if="!create" @click.prevent="create = true">Create</vs-button>
+    <vs-button v-if="!create" @click.prevent="createdHandle">Create</vs-button>
     <CreateForm v-else>
       <vs-button @click.prevent="createUser">Create user</vs-button>
     </CreateForm>
@@ -34,6 +34,10 @@ export default {
       } catch (error) {
         console.log(error);
       }
+    },
+    createdHandle() {
+      console.log(this.create);
+      return (this.create = true);
     }
   }
 };

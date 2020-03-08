@@ -2,29 +2,33 @@
   <section>
     <vs-row vs-align="center" vs-type="flex" vs-justify="center">
       <vs-col vs-w="3">
-        <h1>Login</h1>
-        <form>
-          <vs-input
-            type="email"
-            label="Email"
-            name="email"
-            size="large"
-            v-model="login.email"
-            autofocus
-          ></vs-input>
-          <vs-input
-            type="password"
-            label="Password"
-            name="password"
-            size="large"
-            v-model="login.password"
-          ></vs-input>
-          <vs-button size="large" @click.prevent="logIn">Login</vs-button>
-        </form>
-        <p class="lostPassword">
-          <a href>Lost your password? Click here.</a>
-        </p>
-        <CreateAccount />
+        <div v-if="!created">
+          <h1>Login</h1>
+          <form>
+            <vs-input
+              type="email"
+              label="Email"
+              name="email"
+              size="large"
+              v-model="login.email"
+              autofocus
+            ></vs-input>
+            <vs-input
+              type="password"
+              label="Password"
+              name="password"
+              size="large"
+              v-model="login.password"
+            ></vs-input>
+            <vs-button size="large" @click.prevent="logIn">Login</vs-button>
+          </form>
+          <p class="lostPassword">
+            <a href>Lost your password? Click here.</a>
+          </p>
+        </div>
+        <div>
+          <CreateAccount />
+        </div>
       </vs-col>
     </vs-row>
   </section>
@@ -42,13 +46,14 @@ export default {
       login: {
         email: "",
         password: ""
-      }
+      },
+      created: this.$store.state.created
     };
   },
   methods: {
     logIn() {
       this.$store.dispatch("getUser", this.login.email);
-      this.$router.push({ name: "Profile" });
+      this.$router.push("/profile");
     }
   }
 };

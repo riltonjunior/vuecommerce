@@ -8,6 +8,7 @@ export default new Vuex.Store({
   strict: true,
   state: {
     login: false,
+    created: false,
     user: {
       id: "",
       displayName: "",
@@ -26,6 +27,9 @@ export default new Vuex.Store({
     },
     UPDATE_USER(state, payload) {
       state.user = Object.assign(state.user, payload);
+    },
+    UPDATE_CREATED(state, payload) {
+      state.created = payload;
     }
   },
   actions: {
@@ -38,6 +42,9 @@ export default new Vuex.Store({
     createUser(context, payload) {
       context.commit("UPDATE_USER", { id: payload.email });
       return api.post(`/usuario`, payload);
+    },
+    updateCreated() {
+      this.$store.commit("UPDATE_CREATED", true);
     }
   },
   modules: {}
