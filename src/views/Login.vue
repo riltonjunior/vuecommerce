@@ -46,14 +46,18 @@ export default {
       login: {
         email: "",
         password: ""
-      },
-      created: this.$store.state.created
+      }
     };
   },
   methods: {
     logIn() {
       this.$store.dispatch("getUser", this.login.email);
       this.$router.push("/profile");
+    }
+  },
+  computed: {
+    created() {
+      return this.$store.state.created;
     }
   }
 };
@@ -66,7 +70,7 @@ section {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin: 10% 0;
+  margin: 10% 0 0;
   min-height: 200px;
   align-items: center;
 }

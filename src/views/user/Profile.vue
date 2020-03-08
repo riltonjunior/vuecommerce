@@ -21,9 +21,9 @@
 
           <vs-sidebar-item index="1" icon="store" :to="{name:'User'}">Produtos</vs-sidebar-item>
 
-          <vs-sidebar-item index="2" icon="gavel" :to="{name:'Buys'}">Compras</vs-sidebar-item>
+          <vs-sidebar-item index="2" icon="store" :to="{name:'Buys'}">Compras</vs-sidebar-item>
 
-          <vs-sidebar-item index="3" icon="gavel" :to="{name:'Sells'}">Vendas</vs-sidebar-item>
+          <vs-sidebar-item index="3" icon="store" :to="{name:'Sells'}">Vendas</vs-sidebar-item>
 
           <vs-divider icon="person" position="left">Editar usuário</vs-divider>
           <vs-sidebar-item index="4" icon="account_box" :to="{name:'Edit'}">Editar usuário</vs-sidebar-item>

@@ -3,9 +3,10 @@
     <!-- <vs-row vs-align="center" vs-type="flex" vs-justify="center"> -->
     <!-- <vs-col vs-w="6"> -->
     <h2>Create Account</h2>
-    <vs-button v-if="!create" @click.prevent="createdHandle">Create</vs-button>
+    <vs-button v-if="!create" @click.prevent="createdHandle" size="large">Create</vs-button>
     <CreateForm v-else>
-      <vs-button @click.prevent="createUser">Create user</vs-button>
+      <vs-button size="large" @click.prevent="createUser">Create user</vs-button>
+      <vs-button size="large" @click.prevent="logIn">Login</vs-button>
     </CreateForm>
     <!-- </vs-col> -->
     <!-- </vs-row> -->
@@ -36,8 +37,14 @@ export default {
       }
     },
     createdHandle() {
-      console.log(this.create);
+      // console.log(this.create);
+      // this.$store.dispatch("updateCreated");
+      this.$store.commit("UPDATE_CREATED", true);
       return (this.create = true);
+    },
+    logIn() {
+      this.$store.commit("UPDATE_CREATED", false);
+      return (this.create = false);
     }
   }
 };

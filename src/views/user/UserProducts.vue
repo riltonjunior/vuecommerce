@@ -1,10 +1,17 @@
 <template>
-  <section>User Products</section>
+  <section>
+    <h2>User Products</h2>
+    <ProductAdd />
+  </section>
 </template>
 
 <script>
+import ProductAdd from "@/components/ProductAdd.vue";
 export default {
-  name: "UserProducts"
+  name: "UserProducts",
+  components: {
+    ProductAdd
+  }
 };
 </script>
 
