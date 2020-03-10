@@ -24,24 +24,24 @@
   - [x] Products
   - [x] Inputs
 - [x] Add pagination
-- [ ] Add transition
-  - [ ] Add loading
+- [x] Add transition
+  - [x] Add loading
 - [x] Filter products
-- [ ] Login
-  - [ ] Vuex login
-- [ ] User form
-  - [ ] Vuex form
-- [ ] Cep API
+- [x] Login
+  - [x] Vuex login
+- [x] User form
+  - [x] Vuex form
+- [x] Cep API
 - [ ] Users
   - [ ] POST
   - [ ] Route
   - [ ] Stylesheet
-  - [ ] Products
+  - [x] Products
   - [ ] Profile Update
 - [ ] Products
   - [x] Route
   - [x] Single Page
-  - [ ] Add
+  - [x] Add
   - [ ] Delete
 - [ ] Transactions
 - [ ] Buy and sell
