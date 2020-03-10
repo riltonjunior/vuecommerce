@@ -3,26 +3,26 @@
     <section class="hero">
       <div class="container">
         <h1>Procurando o melhor lugar para comprar?</h1>
-        <ProdutosBuscar class="busca" :produtoPesquisa="pesquisa" />
+        <ProductsSearch class="search" :productSearch="search" />
       </div>
     </section>
-    <ProdutosLista class="lista" />
+    <ProductsList class="list" />
   </div>
 </template>
 
 <script>
-import ProdutosLista from "@/components/ProdutosLista.vue";
-import ProdutosBuscar from "@/components/ProdutosBuscar.vue";
+import ProductsList from "@/components/ProductsList.vue";
+import ProductsSearch from "@/components/ProductsSearch.vue";
 
 export default {
   name: "Home",
   components: {
-    ProdutosLista,
-    ProdutosBuscar
+    ProductsList,
+    ProductsSearch
   },
   data() {
     return {
-      pesquisa: ""
+      search: ""
     };
   }
 };
@@ -42,7 +42,7 @@ export default {
     margin: auto;
   }
 }
-.busca {
+.search {
   margin-top: 10px;
 }
 </style>

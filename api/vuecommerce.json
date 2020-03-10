@@ -49,7 +49,7 @@
     {
       "id": "01",
       "name": "Laptop A",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -58,7 +58,7 @@
     {
       "id": "02",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 2920,
       "sold": true,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -67,7 +67,7 @@
     {
       "id": "03",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
@@ -76,7 +76,7 @@
     {
       "id": "04",
       "name": "Laptop B",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -85,7 +85,7 @@
     {
       "id": "05",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 2920,
       "sold": false,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -94,7 +94,7 @@
     {
       "id": "06",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
@@ -103,7 +103,7 @@
     {
       "id": "07",
       "name": "Laptop C",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -112,7 +112,7 @@
     {
       "id": "08",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 2920,
       "sold": false,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -121,7 +121,7 @@
     {
       "id": "09",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
@@ -130,7 +130,7 @@
     {
       "id": "10",
       "name": "Laptop D",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -139,7 +139,7 @@
     {
       "id": "11",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 2920,
       "sold": false,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -148,7 +148,7 @@
     {
       "id": "12",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
@@ -157,7 +157,7 @@
     {
       "id": "13",
       "name": "Laptop E",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -166,7 +166,7 @@
     {
       "id": "14",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 2920,
       "sold": false,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -175,7 +175,7 @@
     {
       "id": "15",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
@@ -184,7 +184,7 @@
     {
       "id": "16",
       "name": "Laptop F",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -193,7 +193,7 @@
     {
       "id": "17",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 2920,
       "sold": false,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -202,7 +202,7 @@
     {
       "id": "18",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
@@ -211,7 +211,7 @@
     {
       "id": "19",
       "name": "Laptop G",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -220,7 +220,7 @@
     {
       "id": "20",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "milky@dev.dev",
       "price": 2920,
       "sold": false,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -229,7 +229,7 @@
     {
       "id": "21",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
@@ -238,7 +238,7 @@
     {
       "id": "22",
       "name": "Laptop H",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 4000,
       "sold": false,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -247,7 +247,7 @@
     {
       "id": "23",
       "name": "Cooktop",
-      "user_id": "01",
+      "user_id": "milky@dev.dev",
       "price": 2920,
       "sold": false,
       "description": "This is a cooktop. The best cooktop of market.",
@@ -256,11 +256,43 @@
     {
       "id": "24",
       "name": "TV Samsung",
-      "user_id": "01",
+      "user_id": "johndoe@dev.dev",
       "price": 920,
       "sold": false,
       "description": "The best TV of Samsung.",
       "pics": null
+    },
+    {
+      "name": "Teste",
+      "price": "100000",
+      "description": "O que falta?",
+      "pics": null,
+      "user_id": "milky@dev.dev",
+      "id": "a74SBhp"
+    },
+    {
+      "name": "Teste",
+      "price": "100000",
+      "description": "O que falta?",
+      "pics": null,
+      "user_id": "milky@dev.dev",
+      "id": "HFM0hGb"
+    },
+    {
+      "name": "Novo produto",
+      "price": "123",
+      "description": "Teste",
+      "pics": null,
+      "user_id": "milky@dev.dev",
+      "id": "PjhwIEZ"
+    },
+    {
+      "name": "Novo produto",
+      "price": "123",
+      "description": "Teste",
+      "pics": null,
+      "user_id": "milky@dev.dev",
+      "id": "JVMpEJk"
     }
   ]
 }

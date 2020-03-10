@@ -1,26 +1,26 @@
 <template>
-  <form v-on:submit.prevent="buscarProdutos">
+  <form v-on:submit.prevent="searchProducts">
     <vs-row vs-align="flex-start" vs-type="flex" vs-justify="center" vs-w="12">
       <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-w="12">
-        <vs-input size="large" placeholder="Search" v-model="pesquisa" autofocus />
-        <vs-button color="primary" type="filled" icon="search" @click.prevent="buscarProdutos"></vs-button>
+        <vs-input size="large" placeholder="Search" v-model="search" autofocus />
+        <vs-button color="primary" type="filled" icon="search" @click.prevent="searchProducts"></vs-button>
       </vs-col>
     </vs-row>
   </form>
 </template>
 <script>
 export default {
-  name: "ProdutosBuscar",
-  props: ["produtoPesquisa"],
+  name: "ProductsSearch",
+  props: ["productSearch"],
   data() {
     return {
-      pesquisa: this.produtoPesquisa
+      search: this.productSearch
     };
   },
   methods: {
-    buscarProdutos() {
+    searchProducts() {
       //   if (this.keyCode === 13) {
-      this.$router.push({ query: { q: this.pesquisa } });
+      this.$router.push({ query: { q: this.search } });
       //   }
     },
     noop() {

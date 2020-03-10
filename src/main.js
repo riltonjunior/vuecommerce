@@ -3,12 +3,17 @@ import Vuesax from "vuesax";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import Loading from "@/components/layout/Loading.vue";
 
+// Global Settings
 Vue.config.productionTip = false;
 
+// Global Components
+Vue.component("Loading", Loading);
+
+// Global Visual Imports
 import "vuesax/dist/vuesax.css";
 import "material-icons/iconfont/material-icons.css";
-
 Vue.use(Vuesax, {
   theme: {
     colors: {
@@ -20,18 +25,16 @@ Vue.use(Vuesax, {
     }
   }
 });
+
+// Global Filters
 Vue.filter("numberPrice", price => {
-  // console.log(price);
   price = Number(price);
-  // console.log("Depois de number" + price);
   if (!isNaN(price)) {
     return price.toLocaleString("pt-BR", {
       style: "currency",
       currency: "BRL",
       minimumFractionDigits: 2
     });
-  } else {
-    // console.log(price);
   }
 });
 

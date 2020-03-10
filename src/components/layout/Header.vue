@@ -22,6 +22,10 @@ export default {
 </script>
 <style lang="scss">
 .logo {
+  color: #2c3e50; //5b3cc4
+  text-decoration: none;
+}
+.logo:hover {
   color: #5b3cc4;
   text-decoration: none;
 }
