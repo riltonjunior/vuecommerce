@@ -32,19 +32,23 @@
 - [x] User form
   - [x] Vuex form
 - [x] Cep API
-- [ ] Users
-  - [ ] POST
-  - [ ] Route
-  - [ ] Stylesheet
+- [x] Users
+  - [x] POST
+  - [x] Route
+  - [x] Stylesheet
   - [x] Products
   - [ ] Profile Update
-- [ ] Products
+- [x] Products
   - [x] Route
   - [x] Single Page
   - [x] Add
-  - [ ] Delete
-- [ ] Transactions
-- [ ] Buy and sell
+  - [x] Delete
+- [x] Transactions
+- [x] Buy and sell
+- [x] Catch Error
+
+## Extra
+
 - [ ] Transform JSON-SERVER to REST API
   - [ ] Install FeathersJS
   - [ ] Generate app
@@ -56,11 +60,8 @@
 - [ ] Install and configure JWT JSON Web Token
 - [ ] Create and login
 - [ ] Upload photos
-- [ ] Catch Error
-
-## Extra
-
-- [ ] Move component state into the Vuex Store
+- [ ] Bug on User Menu click route
+- [x] Move component state into the Vuex Store
 - [ ] Refactor large components into many smaller components
 - [ ] Make it look prettier
 - [ ] Nav Guard

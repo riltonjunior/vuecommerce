@@ -5,7 +5,7 @@
         Vue
         <strong>Commerce</strong>
       </router-link>
-      <vs-button v-if="$store.state.login" to="/profile" flat>{{getName}}</vs-button>
+      <vs-button v-if="$store.state.login" to="/user" flat>{{getName}}</vs-button>
       <vs-button v-else to="/login" flat>Vender / Login</vs-button>
     </nav>
   </header>

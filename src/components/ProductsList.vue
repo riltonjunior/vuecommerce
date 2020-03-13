@@ -26,7 +26,7 @@
                     <strong>{{produto.price | numberPrice}}</strong>
                   </h2>
                 </span>
-                <span>{{produto.description}}</span>
+                <span>{{produto.description | truncate(45) }}</span>
               </div>
               <div slot="footer">
                 <vs-row vs-justify="flex-end">
@@ -144,5 +144,14 @@ nav {
 }
 li.item-pagination.vs-pagination--li.is-current span {
   color: #fff !important;
+}
+footer.vs-card--footer button {
+  width: 100%;
+}
+.vs-card--content > div > span {
+  // width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>

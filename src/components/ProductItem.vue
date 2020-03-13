@@ -9,9 +9,12 @@
         {{product.name}}
         <span>{{product.price | numberPrice}}</span>
       </h3>
-      <p>{{product.description}}</p>
+      <p class="desc">{{product.description}}</p>
     </div>
-    <vs-button :to="{name:'Product', params: {id: product.id}}" tag="button">Ver produto</vs-button>
+    <div>
+      <vs-button :to="{name:'Product', params: {id: product.id}}" tag="button">Ver produto</vs-button>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -63,5 +66,11 @@ button {
 }
 p {
   margin-bottom: 0px;
+}
+.desc {
+  width: 80vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>

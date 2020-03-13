@@ -5,7 +5,9 @@
     <h2>Seus produtos</h2>
     <transition-group v-if="user_products" name="list" tag="ul">
       <li v-for="(product, index) in user_products" :key="product.title+'_'+index">
-        <ProductItem :product="product" />
+        <ProductItem :product="product">
+          <vs-button @click="deleteProduct(product.id)" tag="button" color="danger" icon="delete"></vs-button>
+        </ProductItem>
       </li>
     </transition-group>
     <!-- {{user_products}} -->
@@ -16,6 +18,7 @@
 import ProductAdd from "@/components/ProductAdd.vue";
 import ProductItem from "@/components/ProductItem.vue";
 import { mapState, mapActions } from "vuex";
+import { api } from "@/services";
 
 export default {
   name: "UserProducts",
@@ -27,7 +30,24 @@ export default {
     ...mapState(["login", "user", "user_products"])
   },
   methods: {
-    ...mapActions(["getUserProducts"])
+    ...mapActions(["getUserProducts"]),
+    deleteProduct(id) {
+      const validate = window.confirm("Deseja remover este produto?");
+      if (validate) {
+        api
+          .delete(`/produto/${id}`)
+          .then(() => {
+            this.getUserProducts();
+          })
+          .catch(error => {
+            this.$vs.notify({
+              title: "Erro",
+              text: error.response,
+              color: "danger"
+            });
+          });
+      }
+    }
   },
   watch: {
     login() {

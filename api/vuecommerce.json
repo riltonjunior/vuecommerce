@@ -1,4 +1,174 @@
 {
+  "transacao": [
+    {
+      "buyer_id": "milky@dev.dev",
+      "seller_id": "johndoe@dev.dev",
+      "product": {
+        "id": "01",
+        "name": "Laptop A",
+        "user_id": "johndoe@dev.dev",
+        "price": 4000,
+        "sold": false,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 1
+    },
+    {
+      "buyer_id": "milky@dev.dev",
+      "seller_id": "johndoe@dev.dev",
+      "product": {
+        "id": "01",
+        "name": "Laptop A",
+        "user_id": "johndoe@dev.dev",
+        "price": 4000,
+        "sold": false,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 2
+    },
+    {
+      "buyer_id": "milky@dev.dev",
+      "seller_id": "johndoe@dev.dev",
+      "product": {
+        "id": "01",
+        "name": "Laptop A",
+        "user_id": "johndoe@dev.dev",
+        "price": 4000,
+        "sold": false,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 3
+    },
+    {
+      "buyer_id": "tino@tino.com",
+      "seller_id": "johndoe@dev.dev",
+      "product": {
+        "id": "01",
+        "name": "Laptop A",
+        "user_id": "johndoe@dev.dev",
+        "price": 4000,
+        "sold": false,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 4
+    },
+    {
+      "buyer_id": "tino@tino.com",
+      "seller_id": "johndoe@dev.dev",
+      "product": {
+        "id": "04",
+        "name": "Laptop B",
+        "user_id": "johndoe@dev.dev",
+        "price": 4000,
+        "sold": false,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 5
+    },
+    {
+      "buyer_id": "tino@tino.com",
+      "seller_id": "johndoe@dev.dev",
+      "product": {
+        "id": "07",
+        "name": "Laptop C",
+        "user_id": "johndoe@dev.dev",
+        "price": 4000,
+        "sold": false,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 6
+    },
+    {
+      "buyer_id": "tino@tino.com",
+      "seller_id": "johndoe@dev.dev",
+      "product": {
+        "id": "04",
+        "name": "Laptop B",
+        "user_id": "johndoe@dev.dev",
+        "price": 4000,
+        "sold": false,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 7
+    },
+    {
+      "buyer_id": "milky@dev.dev",
+      "seller_id": "milky@dev.dev",
+      "product": {
+        "id": "20",
+        "name": "Cooktop",
+        "user_id": "milky@dev.dev",
+        "price": 2920,
+        "sold": false,
+        "description": "This is a cooktop. The best cooktop of market.",
+        "pics": null
+      },
+      "address": {
+        "address": "Rua Real da Torre",
+        "postalCode": "50710100",
+        "complementInfo": "123",
+        "state": "PE",
+        "city": "Recife"
+      },
+      "id": 8
+    }
+  ],
   "usuario": [
     {
       "id": "johndoe@dev.dev",
@@ -35,8 +205,19 @@
     },
     {
       "id": "milky@dev.dev",
-      "displayName": "Milky",
+      "displayName": "Milky Way",
       "email": "milky@dev.dev",
+      "password": "123456",
+      "address": "Rua Real da Torre",
+      "postalCode": "50710100",
+      "complementInfo": "123",
+      "state": "PE",
+      "city": "Recife"
+    },
+    {
+      "id": "tino@tino.com",
+      "displayName": "Markus Santos",
+      "email": "tino@tino.com",
       "password": "123456",
       "address": "Rua Real da Torre",
       "postalCode": "50710100",
@@ -263,36 +444,12 @@
       "pics": null
     },
     {
-      "name": "Teste",
-      "price": "100000",
-      "description": "O que falta?",
+      "name": "Bicycle Nishiro 2019",
+      "price": "549",
+      "description": "Powered by a 250W brushless motor and a 36V battery with built-in pedal-assist to conquer hills effortlessly, get where you’re going faster and easier with Fortis 16” 36V 8Ah Foldable Electric Bike\n\n- Powerful 36V 8Ah lithium battery\n- Up to 30km performance range with pedal assist\n- 250W Advanced brushless motor\n- Premium foldable steel frame and lightweight alloy wheels\n- Front and rear disc brake for controlled stopping power\n- Built-in LCD display with power level indicator\n- Weight capacity up to 110kg\n- Climb hills and ride up to 35km on a single charge thanks to the powerful Fortis 16” 36V 8Ah Ultra Compact Foldable Electric Bike, featuring an advanced - 250W advanced brushless motor, offering greater performance and durability compared to brushed motors.\n\nCompact and flexible storage\n\nTired of having to hunt for a pole or bike rack every day? Taking only seconds to fold, you’ll be able to swiftly jump on and off public transport, store under your desk and load your bike easily in the car boot.",
       "pics": null,
       "user_id": "milky@dev.dev",
-      "id": "a74SBhp"
-    },
-    {
-      "name": "Teste",
-      "price": "100000",
-      "description": "O que falta?",
-      "pics": null,
-      "user_id": "milky@dev.dev",
-      "id": "HFM0hGb"
-    },
-    {
-      "name": "Novo produto",
-      "price": "123",
-      "description": "Teste",
-      "pics": null,
-      "user_id": "milky@dev.dev",
-      "id": "PjhwIEZ"
-    },
-    {
-      "name": "Novo produto",
-      "price": "123",
-      "description": "Teste",
-      "pics": null,
-      "user_id": "milky@dev.dev",
-      "id": "JVMpEJk"
+      "id": "ifaqSQl"
     }
   ]
 }

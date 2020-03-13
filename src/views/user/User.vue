@@ -1,6 +1,6 @@
 <template>
   <section class="sub-pages">
-    <vs-row vs-w="12" class="full-row">
+    <vs-row vs-w="12" class="full-row" vs-align="flex-start">
       <vs-col class="sidebarx" vs-type="flex" vs-justify="flex-start" vs-align="center" vs-w="3">
         <aside>
           <vs-button icon="view_list" color="primary" type="filled " :to="{name:'User'}">Products</vs-button>
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "Profile",
+  name: "User",
   methods: {
     deslogar() {
       this.$store.dispatch("deslogarUsuario");

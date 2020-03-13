@@ -1,8 +1,10 @@
 <template>
   <div>
-    <vs-input type="text" label="Name" name="name" size="large" v-model="displayName" autofocus></vs-input>
-    <vs-input type="email" label="Email" name="email" size="large" v-model="email"></vs-input>
-    <vs-input type="password" label="Password" name="password" size="large" v-model="password"></vs-input>
+    <div v-if="showLoginData">
+      <vs-input type="text" label="Name" name="name" size="large" v-model="displayName" autofocus></vs-input>
+      <vs-input type="email" label="Email" name="email" size="large" v-model="email"></vs-input>
+      <vs-input type="password" label="Password" name="password" size="large" v-model="password"></vs-input>
+    </div>
     <vs-input
       type="text"
       label="Postal Code"
@@ -58,7 +60,10 @@ export default {
       ],
       base: "user",
       mutation: "UPDATE_USER"
-    })
+    }),
+    showLoginData() {
+      return !this.$store.state.login || this.$route.name == "edit";
+    }
     // displayName: {
     //   get() {
     //     return this.$store.state.user.displayName;

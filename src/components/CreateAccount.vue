@@ -31,7 +31,7 @@ export default {
       try {
         await this.$store.dispatch("createUser", this.$store.state.user);
         await this.$store.dispatch("getUser", this.$store.state.user.email);
-        this.$router.push({ name: "Profile" });
+        this.$router.push({ name: "User" });
       } catch (error) {
         console.log(error);
       }

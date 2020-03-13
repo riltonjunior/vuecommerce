@@ -1,7 +1,7 @@
 <template>
   <vs-row vs-align="flex-start" vs-type="flex" vs-justify="center" vs-w="12">
     <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-w="8">
-      <div class="main-product box">
+      <div class="main-product box" v-if="product">
         <h1 class="headerx">{{product.name}}</h1>
         <vs-row vs-align="flex-start" vs-type="flex" vs-justify="center" vs-w="12">
           <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-w="6">
@@ -15,26 +15,37 @@
                 <h2 class="subtitle">{{product.price | numberPrice}}</h2>
                 <p>{{product.description}}</p>
                 <vs-input-number v-if="!product.sold" v-model="qtd" min="1" />
-                <vs-button size="large" v-if="!product.sold">Comprar</vs-button>
-                <vs-button size="large" v-if="product.sold" disabled>Comprar</vs-button>
+                <transition v-if="!product.sold" mode="out-in">
+                  <vs-button size="large" v-if="!checkout" @click="checkout = true">Comprar</vs-button>
+                  <Checkout :product="product" v-else></Checkout>
+                </transition>
+                <vs-button size="large" v-if="product.sold" disabled>Indisponível</vs-button>
               </vs-col>
             </vs-row>
           </vs-col>
         </vs-row>
       </div>
+      <Loading class="window-center" key="loading" v-else />
     </vs-col>
   </vs-row>
 </template>
 
 <script>
 import { api } from "@/services";
+import Checkout from "@/components/Checkout.vue";
+import Loading from "@/components/layout/Loading.vue";
 export default {
   name: "Produto",
   props: ["id"],
+  components: {
+    Checkout,
+    Loading
+  },
   data() {
     return {
       product: "",
-      qtd: 1
+      qtd: 1,
+      checkout: false
     };
   },
   watch: {

@@ -13,8 +13,8 @@
       <vs-input type="number" label="Preço (R$)" name="price" size="large" v-model="product.price"></vs-input>
       <vs-textarea label="Descrição" v-model="product.description" />
       <vs-upload multiple text="Enviar fotos" action="#" @on-success="successUpload" />
-      <vs-button size="large" @click.prevent="addProduct">Comprar</vs-button>
-      <vs-button size="large" color="dark">Cancelar</vs-button>
+      <vs-button size="large" @click.prevent="addProduct">Adicionar produto</vs-button>
+      <vs-button size="large" color="dark" @click="clearForm">Cancelar</vs-button>
     </div>
   </section>
 </template>
@@ -29,7 +29,8 @@ export default {
         name: "",
         price: "",
         description: "",
-        pics: null
+        pics: null,
+        sold: false
       }
     };
   },
@@ -44,11 +45,22 @@ export default {
         text: "Lorem ipsum dolor sit amet, consectetur"
       });
     },
+    clearForm() {
+      this.product.name = "";
+      this.product.price = "";
+      this.product.description = "";
+      this.product.pics = null;
+    },
     addProduct() {
       this.formatProduct();
       api.post("/produto", this.product).then(() => {
         this.$store.dispatch("getUserProducts");
-        this.sucessUpload();
+        // this.sucessUpload();
+        this.$vs.notify({
+          color: "success",
+          title: this.product.name + " adicionado com sucesso"
+        });
+        this.clearForm;
       });
     }
   }

@@ -52,7 +52,7 @@ export default {
   methods: {
     logIn() {
       this.$store.dispatch("getUser", this.login.email);
-      this.$router.push("/profile");
+      this.$router.push("/user");
     }
   },
   computed: {

@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Product from "../views/Product.vue";
 import Login from "../views/Login.vue";
-import Profile from "../views/user/Profile.vue";
+import User from "../views/user/User.vue";
 import UserProducts from "../views/user/UserProducts.vue";
 import UserBuys from "../views/user/UserBuys.vue";
 import UserEdit from "../views/user/UserEdit.vue";
@@ -29,9 +29,9 @@ const routes = [
     component: Login
   },
   {
-    path: "/profile",
-    // name: "Profile",
-    component: Profile,
+    path: "/user",
+    // name: "User Dashboard",
+    component: User,
     children: [
       {
         path: "",
